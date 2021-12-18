@@ -1,0 +1,70 @@
+print("\n1. calculator \n2.area finder \n3.volume finder \nexit")
+opt=int(input("Enter your option"))
+
+
+while True:
+    if opt==1:
+        operator=input("\nselect the operator(+,-,*,%)")
+        f1=int(input("\nenter the first number :"))
+        f2=int(input("\nenter the second number :"))
+
+
+        if operator=="+":
+            print("answer is :",f1+f2)
+        elif operator=="-":
+            print("answer is :",f1-f2)
+        elif operator=="*":
+            print("answer is :",f1*f2)
+        elif operator=="%":
+            print("answer is :",f1%f2)
+        else:
+            print("invalid operator")
+
+    elif opt==2:
+         area=int(input("\n select the area(1. square,2. rectangle,3. triangle,4. circle)"))
+         if area==1:
+             s1=int(input("enter the side :"))
+             f1=s1*s1
+             print(f1)
+         elif area==2:
+             l=int(input("Enter the length :"))
+             b=int(input("Enter the breadth :"))
+             f2=l*b
+             print(f2)
+         elif area==3:
+             h=int(input("Enter the height"))
+             b=int(input("Enter the breadth"))
+             f3=1/2*h*b
+             print(f3)
+         elif area==4:
+             r=int(input("Enter the radius"))
+             f4=22/7*r*r
+             print(f4)
+
+    elif opt==3:
+         volume=int(input("\n select the volume(1. sphere,2. cone,3. cylinder,4. cube)"))
+         if volume==1:
+             r=int(input("enter the radius :"))
+             f1=4/3*22/7*r*r*r
+             print(f1)
+         elif volume==2:
+             r=int(input("Enter the radius :"))
+             h=int(input("Enter the height :"))
+             f2=22/7*r*r*h/3
+             print(f2)
+         elif volume==3:
+             h=int(input("Enter the height"))
+             r=int(input("Enter the radius"))
+             f3=22/7*r*r*h
+             print(f3)
+         elif volume==4:
+             a=int(input("Enter the edges"))
+             f4=a*a*a
+             print(f4)
+
+    else:
+        print("Thankyou")
+        exit()
+                      
+          
+
